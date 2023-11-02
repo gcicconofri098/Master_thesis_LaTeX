@@ -1,0 +1,127 @@
+\chapter{Symmetry breaking for Abelian Gauge Theory}
+In this chapter, we briefly explain the behavior of gauge theories under symmetry breaking. \\
+
+
+So, let us first consider a Lagrangian with the form:
+
+\begin{equation}
+    \mathcal{L} = \partial_{\mu}\phi^{\dagger}\partial^{\mu}\phi - \mu^2\left(\phi^{\dagger} \phi\right) - \lambda \left(\phi^ {\dagger}\phi\right)^2
+\end{equation}
+So there is gauge symmetry, but there's not a gauge field.\\
+If $\mu^2<0$ the field has its minimum in:
+\begin{equation}
+    \langle \phi \rangle_0 \equiv v = \sqrt{\frac{\mu^2}{\lambda}}
+\end{equation}
+
+
+
+We can parametrize $\phi$ with a field that describes the fluctuations around the minimum:
+\begin{equation}
+    \phi(x) = \left(v + \eta(x)\right)e^{i \theta(x)}
+\end{equation}
+where $\theta(x)$ takes into account the gauge symmetry.\\
+Substituting into the Lagrangian:
+\begin{equation}
+    \mathcal{L}=\partial_{\mu}\eta\partial^{\mu}\eta - 4 \lambda v^2 \eta^2 + v^2 \partial_{\mu}\theta\partial^{\mu}\theta + O(\eta^3)
+\end{equation}
+So, like in the global case, we find two particles, one massive, $eta$, and one massless, $\theta$, that is associated with the gauge symmetry, so it is a gauge boson.\\
+Let us now consider a Lagrangian with the form:
+\begin{equation}
+    \mathcal{L} = \left(D_{\mu}\phi^{\dagger}\right) \left(D^{\mu} \phi\right) - \mu^2\left(\phi^{\dagger} \phi\right) - \lambda \left(\phi^ {\dagger}\phi\right)^2 - \frac{1}{4} F_{\mu\nu}F^{\mu\nu},
+\end{equation}
+where $D_{\mu}= \partial_{\mu} + i e A_{\mu}$ is the covariant derivative of the interaction field and keeps the field invariant under gauge transformations.
+This Lagrangian is invariant under any local transformation from the $U(1)$ group.\\
+If we consider the case $\lambda >0, \mu^2<0$ we obtain:
+\begin{equation}
+    \begin{cases}
+        \langle\phi\rangle_0 \equiv \frac{v}{\sqrt{2}} = \sqrt{\frac{\mu^2}{2\lambda}}\\
+        \langle A_{\mu} \rangle_0 = 0
+    \end{cases}
+\end{equation}
+We can parametrize the field in this case as well:
+\begin{equation}
+    \phi(x) = \left(v + \eta(x)\right)e^{i \theta(x)}
+\end{equation}
+If we now consider the gauge transformations both for the field and the interaction field:
+\begin{equation}
+    \begin{cases}
+        \phi(x)\rightarrow e^{-i\Lambda(x)}\\
+        A_{\mu}(x)\rightarrow A_{\mu}(x) - \frac{1}{\alpha}\partial_{\mu}\Lambda(x)
+    \end{cases}
+\end{equation}
+and we fix the gauge, that is, we decide the ambiguity on the gauge transformation that leaves the system invariant, by choosing for example:
+\begin{equation*}
+    \Lambda(x) = \theta(x)
+\end{equation*}
+
+we find that the reparametrized field now has a simpler form:
+\begin{equation}
+    \phi(x) = \eta(x) + v
+\end{equation}
+
+Inserting in the Lagrangian we find:
+\begin{equation}
+      \mathcal{L}= - \frac{1}{4} F_{\mu\nu}F^{\mu\nu} + \alpha^2 v^2A_{\mu}A^{\mu} + \partial_{\mu}\eta\partial^{\mu}\eta - 4 \lambda v^2 \eta^2 + O(\eta^3)
+\end{equation}
+
+So, we can see that, if the Lagrangian has a gauge symmetry, and we add a mechanism of spontaneous symmetry breaking, the Lagrangian keeps its gauge symmetry (we can still apply the transformations previously defined without changing the Lagrangian), but we also obtain a new particle, $\eta$, massive, and the gauge field as well obtains mass.\\
+This mechanism is called Abelian Higgs mechanism.\\
+The physical case uses a non-Abelian group, and in this way it theorizes four gauge bosons.
+
+\chapter{Summary of the properties of elementary particles}
+\label{app_particles}
+A summary of the most important characteristics of SM elementary particles is reported.
+\section{Leptonic sector}
+\begin{table}[hb]
+    \centering
+    \begin{tabular}{c|c|c|c}
+         Particle & mass [MeV]& Q & Y \\ \hline
+         $e$ & 0.511 & -1  & -2\\ \hline
+         $\nu_e$& $<0.8 10^{-6}$& 0 & 0 \\\hline    
+         $\mu$ & 105.6& -1 &-2 \\\hline
+         $\nu_{\mu}$ & & 0  & 0\\\hline
+         $\tau$ & 1776.86 & -1 & -2\\\hline
+         $\nu_{\tau}$ & & 0 & 0\\\hline
+         
+        
+    \end{tabular}
+    \caption{Summary of the leptonic sector}
+    \label{lepton_summary}
+\end{table}
+\section{Quark sector}
+\begin{table}[hb]
+    \centering
+    \begin{tabular}{c|c|c|c}
+         Particle & mass [MeV] & Q &  Y \\ \hline
+         u & 0.511 & +2/3  & \\ \hline
+         d & & -1/3 & \\\hline
+         c & 0.511 & +2/3  & \\ \hline
+         s & & -1/3 & \\\hline         
+         t & 0.511 & +2/3  & \\ \hline
+         b & & -1/3 & \\\hline
+         
+ 
+    \end{tabular}
+    \caption{Summary of the quark sector}
+    \label{quark_summary}
+\end{table}
+\section{Gauge bosons sector}
+\begin{table}[hb]
+    \centering
+    \begin{tabular}{c|c|c|c|c}
+         Particle & mass [GeV] & S & Q  & Y \\ \hline
+         W & 80.3 &1& $\pm$1 & 0 \\ \hline
+         Z & 91.19 & 1 & 0 & 0 \\\hline
+         $\gamma$ & 0&1 & 0 &  0\\\hline
+         $g$ & 0 & 1& 0 & 0 \\\hline
+         H & 125.25 & 0 & 0 & 1 \\\hline 
+ 
+    \end{tabular}
+    \caption{Summary of the gauge boson sector}
+    \label{gauge_summary}
+\end{table}
+
+\chapter{$\kappa$-framework and results}
+\label{kappa_framework}
+The $\kappa$-framework is one of the tests on the SM. It consists of letting the various coupling constants vary and then studying, using a maximum likelihood test, the most probable value for the coupling constant.\\
+In particular, every coupling constant is multiplied by a scaling factor $\kappa$
